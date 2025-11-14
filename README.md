@@ -1,0 +1,1 @@
+# LAMP-custom-activities
