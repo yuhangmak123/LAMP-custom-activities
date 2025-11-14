@@ -1,16 +1,12 @@
-import logo from './logo.svg';
+import logoBase64 from './logo.b64';
 import './App.css';
 
-// Convert logo to base64
-const logoBase64 = `data:image/svg+xml;base64,${btoa(
-  require('./logo.svg').default
-)}`;
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logoBase64} className="App-logo" alt="logo" />
+        <img src={`data:image/svg+xml;base64,${logoBase64}`} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
