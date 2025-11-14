@@ -1,6 +1,7 @@
-import logoBase64 from './logo.txt?raw';
+
 import './App.css';
 
+const logoBase64 = 'PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMDAgMTAwIj4KICA8Y2lyY2xlIGN4PSI1MCIgY3k9IjUwIiByPSI0MCIgc3R5bGU9ImZpbGw6I2ZmYzAwMDsiIC8+Cjwvc3ZnPg==';
 
 function App() {
   return (
