@@ -1,0 +1,51 @@
+.App {
+  text-align: center;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  border-radius: 16px;
+  border-width: 1.5px;
+}
+
+#img_container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.hole_container {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  display: inline-block;
+}
+
+.hole_imgs {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  display: inline-block;
+}
+
+.mole {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 35px; /* centers mole vertically inside hole */
+  left: 35px; /* centers mole horizontally inside hole */
+  cursor: pointer;
+  z-index: 10; /* makes sure mole is on top of the hole */
+}
+
+.mole:active {
+  transform: scale(0.9);
+}
