@@ -1,4 +1,4 @@
-import logoBase64 from './logo.b64?raw';
+import logoBase64 from './logo.txt?raw';
 import './App.css';
 
 
