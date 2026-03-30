@@ -1,14 +1,14 @@
-// src/routes/AppRoutes.jsx
-import { Routes, Route } from "react-router-dom";
-import ModuleOne from "../pages/ModuleOne";
+import useHashRoute from "../hooks/useHashRoute";
 import Home from "../pages/Home";
+import ModuleOne from "../pages/ModuleOne";
+
 
 export default function AppRoutes() {
-  return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/module-one" element={<ModuleOne />} />
-      {/* <Route path="/dashboard" element={<Dashboard />} /> */}
-    </Routes>
-  );
+  const route = useHashRoute();
+
+  if (route === "/") return <Home />;
+  if (route === "/module-one") return <ModuleOne />;
+  // if (route === "/module-two") return <ModuleTwo />;
+
+  return <div>Not Found</div>;
 }
