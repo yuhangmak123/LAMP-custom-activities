@@ -18,7 +18,7 @@ export default function Home() {
 
     return (
         <Box>
-            <IconButton onClickonClick={handleClickBack}>
+            <IconButton onClick={handleClickBack}>
                 <ArrowBackIcon />
             </IconButton>
             <Box>
