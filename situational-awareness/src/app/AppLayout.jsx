@@ -14,14 +14,14 @@ export default function AppLayout({ children }) {
             elevation={4}
             sx={{
               mt: -1,
-              p: 3,
+              p: 2,
               borderRadius: 3,
               position: "relative",
               zIndex: 1200,
-              flex: 1,              
+              flex: 1,
               display: "flex",
               flexDirection: "column",
-              
+
             }}
           >
             {children}
