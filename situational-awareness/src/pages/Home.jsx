@@ -10,6 +10,7 @@ export default function Home() {
     const handleClickBack = () => {
         parent.postMessage(
             JSON.stringify({
+                timestamp: Date.now(),
                 static_data: {
                     test: "hi",
                     EndTime: new Date(),
